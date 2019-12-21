@@ -17,6 +17,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
+import client.front.LoginWindow;
+
 public class ClientManager {
 
 	private static Socket socket = null;
@@ -25,13 +27,17 @@ public class ClientManager {
 	private static String strSeverAddress = "localhost";
 	
 	public static void main(String[] args) {
-		try {
-			serverAddress = InetAddress.getByName(strSeverAddress);
-		} catch (UnknownHostException uhEx) {
-			System.out.println("Host ID not found!");
-			System.exit(1);
-		}
-		accessServer();
+//		try {
+//			serverAddress = InetAddress.getByName(strSeverAddress);
+//		} catch (UnknownHostException uhEx) {
+//			System.out.println("Host ID not found!");
+//			System.exit(1);
+//		}
+//		accessServer();
+        LoginWindow login = new LoginWindow();
+        login.main(null);
+        //MainWindow clientFront = new MainWindow();
+        //clientFront.showWindow();
 
 	}
 	
