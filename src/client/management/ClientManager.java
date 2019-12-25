@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package client;
+package client.management;
 
 /**
  *
@@ -35,7 +35,7 @@ public class ClientManager {
 //		}
 //		accessServer();
         LoginWindow login = new LoginWindow();
-        login.main(null);
+        login.showWindow();
         //MainWindow clientFront = new MainWindow();
         //clientFront.showWindow();
 
